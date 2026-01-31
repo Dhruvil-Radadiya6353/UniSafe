@@ -144,6 +144,11 @@ Admins can **update emergency status in real time**.
 * Java / Kotlin
 * XML (Material Design)
 
+### 🌐 Google Technologies (Special Mention)
+
+* **Firebase Realtime Database** – Used as the backend to store student records, emergency reports, SOS alerts, and status updates with real-time synchronization
+* **Google Maps API** – Used to share and visualize live emergency locations, helping authorities quickly identify and reach the affected area
+
 ### 📍 Services & Tools
 
 * GPS / Location Services
