@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- HEADER -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- LOGOUT (HIDDEN BY DEFAULT) -->
+        <TextView
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:padding="12dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <!-- APP NAME -->
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unisafe"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- LOGIN -->
+        <TextView
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="16sp"
+            android:textColor="#D32F2F"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- TITLE -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergency Alert Panel"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- EMERGENCY BUTTON ROW -->
+    <LinearLayout
+        android:id="@+id/layoutEmergencyTypes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:weightSum="3"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- FIRE -->
+        <Button
+            android:id="@+id/btnFire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FIRE\nEMERGENCY"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#F44336"
+            android:elevation="8dp"
+            android:layout_margin="8dp"/>
+
+        <!-- MEDICAL -->
+        <Button
+            android:id="@+id/btnMedical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEDICAL\nEMERGENCY"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#4CAF50"
+            android:elevation="8dp"
+            android:layout_margin="8dp"/>
+
+        <!-- SAFETY -->
+        <Button
+            android:id="@+id/btnSafety"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAFETY\nEMERGENCY"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#2196F3"
+            android:elevation="8dp"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <!-- SOS BUTTON -->
+    <Button
+        android:id="@+id/btnSOS"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="SOS"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#F44336"
+        android:elevation="14dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutEmergencyTypes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- SUBTEXT -->
+    <TextView
+        android:id="@+id/tvSubText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to alert campus authorities instantly"
+        android:textSize="14sp"
+        android:textColor="#777777"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/btnSOS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_text">#757575</color>
+    <color name="black_text">#212121</color>
+    <!-- Soft emergency reds -->
+    <color name="red_soft_start">#FFEBEE</color>
+    <color name="red_soft_end">#FFCDD2</color>
+
+    <color name="red_primary">#E53935</color>
+    <color name="red_dark">#B71C1C</color>
+
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+</resources>
